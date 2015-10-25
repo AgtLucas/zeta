@@ -16,3 +16,9 @@ func myOtherFunction(param1: String, param2: Int) -> String {
 
 myOtherFunction("Ok!", param2: 0)
 
+// Function with external parameter
+func extPar(fromName name: String) {
+    print("\(name) says hello to you!")
+}
+
+extPar(fromName: "Octocat")
