@@ -2,4 +2,10 @@
 
 import UIKit
 
-var str = "Hello, playground"
+// Simple function
+func mySimpleFunction() {
+    print("hello!")
+}
+
+mySimpleFunction()
+
