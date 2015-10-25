@@ -65,3 +65,10 @@ struct Celsius {
 }
 
 let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+
+// Optional parameter types
+func myFuncWithOptionalType(parameter: String?) {
+    print(parameter)
+}
+
+myFuncWithOptionalType(nil)
