@@ -37,7 +37,11 @@ class MyFirstFuncClass {
         print("Hey \(name). I live in \(location) and have \(age) years old.")
     }
     
+    func _mFFC(name: String, _ age: Int, _ location: String) {
+        print("Hey \(name). I live in \(location) and have \(age) years old.")
+    }
+    
 }
 
 let myFirstFuncClass = MyFirstFuncClass()
-myFirstFuncClass.mFFC("Yeay", age: 10, location: "Whatever")
+myFirstFuncClass._mFFC("Yeay", 10, "Whatever")
