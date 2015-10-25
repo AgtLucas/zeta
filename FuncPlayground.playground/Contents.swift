@@ -67,8 +67,12 @@ struct Celsius {
 let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
 
 // Optional parameter types
-func myFuncWithOptionalType(parameter: String?) {
-    print(parameter)
+func myFuncWithOptionalType(optionalParameter: String?) {
+    if let unwrappedOptional = optionalParameter {
+        print("The optional has a value! It's \(unwrappedOptional)")
+    } else {
+        print("The optional is nil!")
+    }
 }
 
 myFuncWithOptionalType(nil)
