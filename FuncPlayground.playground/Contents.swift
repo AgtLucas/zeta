@@ -83,3 +83,18 @@ func defaultValueFunc(name: String = "Yay!") {
 }
 
 defaultValueFunc("😁")
+
+// Variadic parameters
+func helloWithNames(names: String...) {
+    
+    if names.count > 0 {
+        for name in names {
+            print("Hello, \(name)")
+        }
+    } else {
+        print("Nobody here!")
+    }
+    
+}
+
+helloWithNames()
