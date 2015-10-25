@@ -76,3 +76,10 @@ func myFuncWithOptionalType(optionalParameter: String?) {
 }
 
 myFuncWithOptionalType(nil)
+
+// Default values
+func defaultValueFunc(name: String = "Yay!") {
+    print("Howdy \(name)")
+}
+
+defaultValueFunc("😁")
