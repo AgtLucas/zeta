@@ -30,4 +30,14 @@ func extPar2(name name: String) {
 
 extPar2(name: "Thunder")
 
-// 
+// Calling on methods
+class MyFirstFuncClass {
+    
+    func mFFC(name: String, age: Int, location: String) {
+        print("Hey \(name). I live in \(location) and have \(age) years old.")
+    }
+    
+}
+
+let myFirstFuncClass = MyFirstFuncClass()
+myFirstFuncClass.mFFC("Yeay", age: 10, location: "Whatever")
