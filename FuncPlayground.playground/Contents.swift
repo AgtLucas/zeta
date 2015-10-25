@@ -22,3 +22,12 @@ func extPar(fromName name: String) {
 }
 
 extPar(fromName: "Octocat")
+
+// Function with external parameter #2
+func extPar2(name name: String) {
+    print("hello \(name)")
+}
+
+extPar2(name: "Thunder")
+
+// 
