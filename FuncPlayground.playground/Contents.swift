@@ -97,4 +97,4 @@ func helloWithNames(names: String...) {
     
 }
 
-helloWithNames()
+helloWithNames("😡", "🙂")
