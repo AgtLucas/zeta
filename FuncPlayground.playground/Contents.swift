@@ -45,3 +45,23 @@ class MyFirstFuncClass {
 
 let myFirstFuncClass = MyFirstFuncClass()
 myFirstFuncClass._mFFC("Yeay", 10, "Whatever")
+
+// ... struct
+struct Celsius {
+    var temperatureInCelsius: Double
+    
+    init(fromFahrenheit fahrenheit: Double) {
+        temperatureInCelsius = (fahrenheit - 32.0) / 1.8
+        print(temperatureInCelsius)
+    }
+    
+    init(fromKelvin kelvin: Double) {
+        temperatureInCelsius = kelvin - 273.15
+    }
+    
+    init(_ celsius: Double) {
+        temperatureInCelsius = celsius
+    }
+}
+
+let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
