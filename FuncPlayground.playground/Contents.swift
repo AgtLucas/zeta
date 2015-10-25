@@ -9,3 +9,10 @@ func mySimpleFunction() {
 
 mySimpleFunction()
 
+// Other function, with parameters
+func myOtherFunction(param1: String, param2: Int) -> String {
+    return "hello other function \(param1), \(param2)"
+}
+
+myOtherFunction("Ok!", param2: 0)
+
